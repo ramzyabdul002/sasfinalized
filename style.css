@@ -1,0 +1,397 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #BBC0FF;
+}
+
+.logo {
+  background: url(pix/logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 6.25rem;
+  height: 6.25rem;
+  border-radius: 10000px;
+  border: 2px solid #f58615;
+  margin-bottom: 10px;
+}
+
+.welcome {
+  text-align: center;
+  font-size: 1.9em;
+  color: black;
+  text-transform: uppercase;
+
+}
+
+.socials {
+  text-align: center;
+  font-size: 1.5em;
+  background-color: #067cff;
+  color: #ffffff;
+  margin-top: 1.5rem;
+  letter-spacing: 1.5px;
+}
+
+.copy {
+  text-align: center;
+  font-size: .7em;
+  margin-bottom: 10px;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem .5rem;
+  flex-wrap: wrap;
+}
+
+.top-section {
+  width: 90%;
+  height: 20%;
+  /* background-color: lightblue; */
+
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1rem .5rem;
+}
+
+.middle-container,
+.bottom-container {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  /* background-color: coral; */
+  padding: 1rem .5rem;
+}
+
+.whatsapp {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 10rem;
+  z-index: 1000000;
+}
+
+.whatsapp-icon {
+  width: 2.12rem;
+  height: 2.12rem;
+  animation: attention 2s infinite;
+}
+
+.whatsapp-icon img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.bottom-container {
+  /* background-color: aqua; */
+}
+
+.middle-section,
+.bottom-section {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  column-gap: 2.5rem;
+}
+
+.netflix,
+.spotify,
+.iptv,
+.prime,
+.pubg,
+.yalla-ludo,
+.bigo-live,
+.patti {
+  /* border: 1px solid black; */
+  width: 10rem;
+  height: 10rem;
+}
+
+.netflix,
+.spotify,
+.iptv,
+.prime,
+.pubg,
+.yalla-ludo,
+.bigo-live,
+.patti {
+  display: grid;
+  grid-template-rows: 4fr 1fr;
+  height: 10rem;
+  width: 9.9rem;
+  border-radius: 8px 8px 0 0;
+  box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 20px 0px;
+}
+
+.middle-section a {
+  text-decoration: none;
+  background: url(pix/netflix.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 7.8rem;
+  width: 9.9rem;
+  background-color: #ae0c18;
+  border-radius: 8px 8px 0 0;
+}
+
+.prime a {
+  text-decoration: none;
+  background: url(pix/prime-video.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.iptv a {
+  text-decoration: none;
+  background: url(pix/iptv.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.spotify a {
+  text-decoration: none;
+  background: url(pix/spotify.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pubg a {
+  text-decoration: none;
+  background: url(pix/pubg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.yalla-ludo a {
+  text-decoration: none;
+  background: url(pix/yalla-ludo-new.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bigo-live a {
+  text-decoration: none;
+  background: url(pix/bigo-live.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.patti a {
+  text-decoration: none;
+  background: url(pix/patti.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* height: 8.9rem; */
+}
+
+button {
+  text-align: center;
+  font-weight: bold;
+  color: #ae0c18;
+  background-color: #ffffff;
+  border: none;
+  letter-spacing: 2px;
+  width: 9.9rem;
+  height: 2rem;
+  font-size: 1em;
+}
+
+.prime button {
+  text-align: center;
+  font-weight: bold;
+  color: #000000;
+  background-color: #ffffff;
+  border: none;
+  letter-spacing: 2px;
+  width: 9.9rem;
+  height: 2rem;
+  font-size: 1em;
+}
+
+.iptv button {
+  text-align: center;
+  font-weight: bold;
+  color: #067cff;
+  background-color: #ffffff;
+  border: none;
+  letter-spacing: 2px;
+  width: 9.9rem;
+  height: 2rem;
+  font-size: 1em;
+}
+
+.spotify button {
+  text-align: center;
+  font-weight: bold;
+  color: #1ed760;
+  background-color: #ffffff;
+  border: none;
+  letter-spacing: 2px;
+  width: 9.9rem;
+  height: 2rem;
+  font-size: 1em;
+}
+
+.pubg button {
+  text-align: center;
+  font-weight: bold;
+  color: #d87f00;
+  background-color: #ffffff;
+  border: none;
+  letter-spacing: 2px;
+  width: 9.9rem;
+  height: 2rem;
+  font-size: 1em;
+}
+
+.yalla-ludo button {
+  text-align: center;
+  font-weight: bold;
+  color: #064538;
+  background-color: #ffffff;
+  border: none;
+  letter-spacing: 2px;
+  width: 9.9rem;
+  height: 2rem;
+  font-size: 1em;
+}
+
+.bigo-live button {
+  text-align: center;
+  font-weight: bold;
+  color: #000000;
+  background-color: #ffffff;
+  border: none;
+  letter-spacing: 2px;
+  width: 9.9rem;
+  height: 2rem;
+  font-size: 1em;
+}
+
+.patti button {
+  text-align: center;
+  font-weight: bold;
+  color: #fdca4b;
+  background-color: #ffffff;
+  border: none;
+  letter-spacing: 2px;
+  width: 9.9rem;
+  height: 2rem;
+  font-size: 1em;
+}
+
+.mini-cont {
+  display: flex;
+  /* background-color: #ae0c18; */
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1.5rem;
+  gap: 1.2rem;
+}
+
+.mini-cont .contact-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  font-size: 1.9em;
+  /* background-color: #064538; */
+  border-radius: .6rem;
+}
+
+.contact-icons a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.facebook {
+  background-color: #1877F2;
+}
+
+.youtube {
+  background-color: #FF0000;
+
+}
+
+.tiktok {
+  background: linear-gradient(302deg, rgba(105, 201, 208, 1) 0%, rgba(255, 255, 255, 1) 51%, rgba(238, 29, 82, 1) 100%);
+}
+
+.instagram {
+  background-color: #d62976;
+}
+
+@keyframes attention {
+  0% {
+    transform: scale(1.1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .middle-section,
+  .bottom-section {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+  }
+
+  section .top-section {
+    display: flex;
+    /* gap: 5px; */
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .search {
+    background-color: #067affb8;
+    color: #ffffff;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  .middle-section,
+  .bottom-section {
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
+
+  section .top-section {
+    display: flex;
+    /* gap: 5px; */
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .search {
+    background-color: #067affb8;
+    color: #ffffff;
+  }
+}

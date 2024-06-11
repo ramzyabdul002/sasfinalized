@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+
+body {
+  backdrop-filter: blur(2px);
+  background-color: #fcc04982;
+
+  background-image: url(../pix/spotify.webp), url(../pix/spotify.webp);
+  background-position: center center;
+  background-repeat: repeat-x(2);
+  background-size: cover;
+  padding: 5rem 0;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  margin: .9rem auto;
+  color: #ffffff;
+  background-color: #189ad6ad;
+  letter-spacing: 2px;
+}
+
+.whatsapp {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 10.25rem;
+  z-index: 1000000;
+}
+
+.whatsapp-icon {
+  width: 2.12rem;
+  height: 2.12rem;
+  animation: attention 2s infinite;
+}
+
+.whatsapp-icon img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  /* height: 100vh; */
+  flex-grow: 1;
+}
+
+.card {
+  width: 9rem;
+  height: 10rem;
+  border-radius: 20px;
+  padding: 5px;
+  color: #1ed760;
+  background-color: #000000;
+  text-align: center;
+  padding: .7rem 4rem;
+
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1.5px;
+}
+
+.card p {
+  font-weight: bold;
+  color: #1ed760;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.back-btn {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.back-btn a {
+  background-color: #1899D6;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 13px 19px;
+  border-radius: 1rem;
+  letter-spacing: 1px;
+}
+
+@keyframes attention {
+  0% {
+    transform: scale(1.1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
