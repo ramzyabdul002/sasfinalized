@@ -9,18 +9,34 @@ body {
   background-color: #bbc0ff;
 }
 
-.logo {
+/* .logo {
   background: url(pix/logo.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 6.25rem;
   height: 6.25rem;
-  border-radius: 50%; /* Changed to 50% for perfect roundness */
+  border-radius: 10000px;
   border: 2px solid #f58615;
   margin-bottom: 10px;
+} */
+
+.top-section .logo img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 2px solid #f58615;
+  margin: 10px 20px;
 }
 
+.top-section {
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1rem 0.5rem;
+}
 .welcome {
   text-align: center;
   font-size: 1.9em;
@@ -51,19 +67,12 @@ body {
   flex-wrap: wrap;
 }
 
-.top-section {
-  width: 90%;
-  height: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 0.5rem;
-}
-
 .middle-container,
 .bottom-container {
   display: flex;
+  /* flex-wrap: wrap; */
   justify-content: center;
+  /* background-color: coral; */
   padding: 1rem 0.5rem;
 }
 
@@ -86,6 +95,10 @@ body {
   height: 100%;
 }
 
+.bottom-container {
+  /* background-color: aqua; */
+}
+
 .middle-section,
 .bottom-section {
   display: grid;
@@ -101,66 +114,184 @@ body {
 .yalla-ludo,
 .bigo-live,
 .patti {
+  /* border: 1px solid black; */
   width: 10rem;
   height: 10rem;
+}
+
+.netflix,
+.spotify,
+.iptv,
+.prime,
+.pubg,
+.yalla-ludo,
+.bigo-live,
+.patti {
   display: grid;
   grid-template-rows: 4fr 1fr;
+  height: 10rem;
+  width: 9.9rem;
   border-radius: 8px 8px 0 0;
   box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 20px 0px;
 }
 
-.middle-section a,
-.prime a,
-.iptv a,
-.spotify a,
-.pubg a,
-.yalla-ludo a,
-.bigo-live a,
-.patti a {
+.middle-section a {
   text-decoration: none;
+  background: url(pix/netflix.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 7.8rem;
   width: 9.9rem;
+  background-color: #ae0c18;
   border-radius: 8px 8px 0 0;
 }
 
-.middle-section a {
-  background-color: #ae0c18;
-}
-
 .prime a {
-  background-color: #00a8e1;
+  text-decoration: none;
+  background: url(pix/prime-video.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .iptv a {
-  background-color: #067cff;
+  text-decoration: none;
+  background: url(pix/iptv.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .spotify a {
-  background-color: #1ed760;
+  text-decoration: none;
+  background: url(pix/spotify.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .pubg a {
-  background-color: #d87f00;
+  text-decoration: none;
+  background: url(pix/pubg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .yalla-ludo a {
-  background-color: #064538;
+  text-decoration: none;
+  background: url(pix/yalla-ludo-new.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .bigo-live a {
-  background-color: #000000;
+  text-decoration: none;
+  background: url(pix/bigo-live.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .patti a {
-  background-color: #fdca4b;
+  text-decoration: none;
+  background: url(pix/patti.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* height: 8.9rem; */
 }
 
 button {
   text-align: center;
   font-weight: bold;
+  color: #ae0c18;
+  background-color: #ffffff;
+  border: none;
+  letter-spacing: 2px;
+  width: 9.9rem;
+  height: 2rem;
+  font-size: 1em;
+}
+
+.prime button {
+  text-align: center;
+  font-weight: bold;
+  color: #000000;
+  background-color: #ffffff;
+  border: none;
+  letter-spacing: 2px;
+  width: 9.9rem;
+  height: 2rem;
+  font-size: 1em;
+}
+
+.iptv button {
+  text-align: center;
+  font-weight: bold;
+  color: #067cff;
+  background-color: #ffffff;
+  border: none;
+  letter-spacing: 2px;
+  width: 9.9rem;
+  height: 2rem;
+  font-size: 1em;
+}
+
+.spotify button {
+  text-align: center;
+  font-weight: bold;
+  color: #1ed760;
+  background-color: #ffffff;
+  border: none;
+  letter-spacing: 2px;
+  width: 9.9rem;
+  height: 2rem;
+  font-size: 1em;
+}
+
+.pubg button {
+  text-align: center;
+  font-weight: bold;
+  color: #d87f00;
+  background-color: #ffffff;
+  border: none;
+  letter-spacing: 2px;
+  width: 9.9rem;
+  height: 2rem;
+  font-size: 1em;
+}
+
+.yalla-ludo button {
+  text-align: center;
+  font-weight: bold;
+  color: #064538;
+  background-color: #ffffff;
+  border: none;
+  letter-spacing: 2px;
+  width: 9.9rem;
+  height: 2rem;
+  font-size: 1em;
+}
+
+.bigo-live button {
+  text-align: center;
+  font-weight: bold;
+  color: #000000;
+  background-color: #ffffff;
+  border: none;
+  letter-spacing: 2px;
+  width: 9.9rem;
+  height: 2rem;
+  font-size: 1em;
+}
+
+.patti button {
+  text-align: center;
+  font-weight: bold;
+  color: #fdca4b;
   background-color: #ffffff;
   border: none;
   letter-spacing: 2px;
@@ -171,6 +302,7 @@ button {
 
 .mini-cont {
   display: flex;
+  /* background-color: #ae0c18; */
   align-items: center;
   justify-content: center;
   padding: 1.5rem 1.5rem;
@@ -184,6 +316,7 @@ button {
   width: 3.2rem;
   height: 3.2rem;
   font-size: 1.9em;
+  /* background-color: #064538; */
   border-radius: 0.6rem;
 }
 
@@ -217,9 +350,11 @@ button {
   0% {
     transform: scale(1.1);
   }
+
   50% {
     transform: scale(1.5);
   }
+
   100% {
     transform: scale(1.1);
   }
@@ -232,7 +367,10 @@ button {
     row-gap: 1rem;
   }
 
-  .top-section {
+  section .top-section {
+    display: flex;
+    /* gap: 5px; */
+    justify-content: center;
     flex-direction: column;
   }
 
@@ -249,7 +387,10 @@ button {
     row-gap: 1rem;
   }
 
-  .top-section {
+  section .top-section {
+    display: flex;
+    /* gap: 5px; */
+    justify-content: center;
     flex-direction: column;
   }
 
