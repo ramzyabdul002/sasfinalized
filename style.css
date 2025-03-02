@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #BBC0FF;
+  background-color: #bbc0ff;
 }
 
 .logo {
@@ -16,7 +16,7 @@ body {
   background-size: cover;
   width: 6.25rem;
   height: 6.25rem;
-  border-radius: 10000px;
+  border-radius: 50%; /* Changed to 50% for perfect roundness */
   border: 2px solid #f58615;
   margin-bottom: 10px;
 }
@@ -26,7 +26,6 @@ body {
   font-size: 1.9em;
   color: black;
   text-transform: uppercase;
-
 }
 
 .socials {
@@ -40,7 +39,7 @@ body {
 
 .copy {
   text-align: center;
-  font-size: .7em;
+  font-size: 0.7em;
   margin-bottom: 10px;
 }
 
@@ -48,30 +47,24 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 1rem .5rem;
+  padding: 1rem 0.5rem;
   flex-wrap: wrap;
 }
 
 .top-section {
   width: 90%;
   height: 20%;
-  /* background-color: lightblue; */
-
   display: flex;
-  /* flex-wrap: wrap; */
   align-items: center;
   justify-content: space-between;
-
-  padding: 1rem .5rem;
+  padding: 1rem 0.5rem;
 }
 
 .middle-container,
 .bottom-container {
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: center;
-  /* background-color: coral; */
-  padding: 1rem .5rem;
+  padding: 1rem 0.5rem;
 }
 
 .whatsapp {
@@ -93,10 +86,6 @@ body {
   height: 100%;
 }
 
-.bottom-container {
-  /* background-color: aqua; */
-}
-
 .middle-section,
 .bottom-section {
   display: grid;
@@ -112,184 +101,66 @@ body {
 .yalla-ludo,
 .bigo-live,
 .patti {
-  /* border: 1px solid black; */
   width: 10rem;
   height: 10rem;
-}
-
-.netflix,
-.spotify,
-.iptv,
-.prime,
-.pubg,
-.yalla-ludo,
-.bigo-live,
-.patti {
   display: grid;
   grid-template-rows: 4fr 1fr;
-  height: 10rem;
-  width: 9.9rem;
   border-radius: 8px 8px 0 0;
   box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 20px 0px;
 }
 
-.middle-section a {
+.middle-section a,
+.prime a,
+.iptv a,
+.spotify a,
+.pubg a,
+.yalla-ludo a,
+.bigo-live a,
+.patti a {
   text-decoration: none;
-  background: url(pix/netflix.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 7.8rem;
   width: 9.9rem;
-  background-color: #ae0c18;
   border-radius: 8px 8px 0 0;
 }
 
+.middle-section a {
+  background-color: #ae0c18;
+}
+
 .prime a {
-  text-decoration: none;
-  background: url(pix/prime-video.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #00a8e1;
 }
 
 .iptv a {
-  text-decoration: none;
-  background: url(pix/iptv.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #067cff;
 }
 
 .spotify a {
-  text-decoration: none;
-  background: url(pix/spotify.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #1ed760;
 }
 
 .pubg a {
-  text-decoration: none;
-  background: url(pix/pubg.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #d87f00;
 }
 
 .yalla-ludo a {
-  text-decoration: none;
-  background: url(pix/yalla-ludo-new.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #064538;
 }
 
 .bigo-live a {
-  text-decoration: none;
-  background: url(pix/bigo-live.webp);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #000000;
 }
 
 .patti a {
-  text-decoration: none;
-  background: url(pix/patti.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  /* height: 8.9rem; */
+  background-color: #fdca4b;
 }
 
 button {
   text-align: center;
   font-weight: bold;
-  color: #ae0c18;
-  background-color: #ffffff;
-  border: none;
-  letter-spacing: 2px;
-  width: 9.9rem;
-  height: 2rem;
-  font-size: 1em;
-}
-
-.prime button {
-  text-align: center;
-  font-weight: bold;
-  color: #000000;
-  background-color: #ffffff;
-  border: none;
-  letter-spacing: 2px;
-  width: 9.9rem;
-  height: 2rem;
-  font-size: 1em;
-}
-
-.iptv button {
-  text-align: center;
-  font-weight: bold;
-  color: #067cff;
-  background-color: #ffffff;
-  border: none;
-  letter-spacing: 2px;
-  width: 9.9rem;
-  height: 2rem;
-  font-size: 1em;
-}
-
-.spotify button {
-  text-align: center;
-  font-weight: bold;
-  color: #1ed760;
-  background-color: #ffffff;
-  border: none;
-  letter-spacing: 2px;
-  width: 9.9rem;
-  height: 2rem;
-  font-size: 1em;
-}
-
-.pubg button {
-  text-align: center;
-  font-weight: bold;
-  color: #d87f00;
-  background-color: #ffffff;
-  border: none;
-  letter-spacing: 2px;
-  width: 9.9rem;
-  height: 2rem;
-  font-size: 1em;
-}
-
-.yalla-ludo button {
-  text-align: center;
-  font-weight: bold;
-  color: #064538;
-  background-color: #ffffff;
-  border: none;
-  letter-spacing: 2px;
-  width: 9.9rem;
-  height: 2rem;
-  font-size: 1em;
-}
-
-.bigo-live button {
-  text-align: center;
-  font-weight: bold;
-  color: #000000;
-  background-color: #ffffff;
-  border: none;
-  letter-spacing: 2px;
-  width: 9.9rem;
-  height: 2rem;
-  font-size: 1em;
-}
-
-.patti button {
-  text-align: center;
-  font-weight: bold;
-  color: #fdca4b;
   background-color: #ffffff;
   border: none;
   letter-spacing: 2px;
@@ -300,7 +171,6 @@ button {
 
 .mini-cont {
   display: flex;
-  /* background-color: #ae0c18; */
   align-items: center;
   justify-content: center;
   padding: 1.5rem 1.5rem;
@@ -314,8 +184,7 @@ button {
   width: 3.2rem;
   height: 3.2rem;
   font-size: 1.9em;
-  /* background-color: #064538; */
-  border-radius: .6rem;
+  border-radius: 0.6rem;
 }
 
 .contact-icons a {
@@ -324,16 +193,20 @@ button {
 }
 
 .facebook {
-  background-color: #1877F2;
+  background-color: #1877f2;
 }
 
 .youtube {
-  background-color: #FF0000;
-
+  background-color: #ff0000;
 }
 
 .tiktok {
-  background: linear-gradient(302deg, rgba(105, 201, 208, 1) 0%, rgba(255, 255, 255, 1) 51%, rgba(238, 29, 82, 1) 100%);
+  background: linear-gradient(
+    302deg,
+    rgba(105, 201, 208, 1) 0%,
+    rgba(255, 255, 255, 1) 51%,
+    rgba(238, 29, 82, 1) 100%
+  );
 }
 
 .instagram {
@@ -344,28 +217,22 @@ button {
   0% {
     transform: scale(1.1);
   }
-
   50% {
     transform: scale(1.5);
   }
-
   100% {
     transform: scale(1.1);
   }
 }
 
 @media screen and (max-width: 600px) {
-
   .middle-section,
   .bottom-section {
     grid-template-columns: 1fr 1fr;
     row-gap: 1rem;
   }
 
-  section .top-section {
-    display: flex;
-    /* gap: 5px; */
-    justify-content: center;
+  .top-section {
     flex-direction: column;
   }
 
@@ -376,17 +243,13 @@ button {
 }
 
 @media screen and (max-width: 400px) {
-
   .middle-section,
   .bottom-section {
     grid-template-columns: 1fr;
     row-gap: 1rem;
   }
 
-  section .top-section {
-    display: flex;
-    /* gap: 5px; */
-    justify-content: center;
+  .top-section {
     flex-direction: column;
   }
 
